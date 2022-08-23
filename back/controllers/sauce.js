@@ -79,7 +79,6 @@ exports.updateLike = (req, res, next) => {
     const sauceId = req.params.id
     const userId = req.body.userId
     const like = req.body.like
-    console.log('like :>> ', like);
    
     Sauce.findOne({ _id: sauceId })
         .then(sauce => {
