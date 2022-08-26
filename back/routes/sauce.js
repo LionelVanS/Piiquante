@@ -17,6 +17,6 @@ router.put('/:id', auth, multer, sauceCtrl.updateSauce);
 router.delete('/:id', auth, sauceCtrl.deleteSauce);
 
 // Déclaration de la route des likes
-router.post('/:id/like', sauceCtrl.updateLike);
+router.post('/:id/like', auth, sauceCtrl.updateLike);
 
 module.exports = router;
