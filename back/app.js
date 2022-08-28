@@ -12,24 +12,23 @@ const sauceRoutes = require('./routes/sauce')
 // Création de l'application express
 const app = express()
 
-// Obtention des réponses en objet json
+// Récupération du corps des requêtes
 app.use(express.json())
 
-
-// Connection à la base de données mongoDB Atlas 
-// avec dotenv pour sécuriser les identifiants
-mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.zqxd8ds.mongodb.net/test?retryWrites=true&w=majority`,
-{ useNewUrlParser: true,
-  useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
-  
 // Modification des entêtes HTTP avec HELMET pour augmenter la sécurité
 // de l'application Express
 app.use(helmet())
 
+// Connection à la base de données mongoDB Atlas 
+// avec dotenv pour sécuriser les identifiants
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_DATABASE}/test?retryWrites=true&w=majority`,
+{ useNewUrlParser: true,
+  useUnifiedTopology: true })
+  .then(() => console.log('Connexion à MongoDB réussie !'))
+  .catch(() => console.log('Connexion à MongoDB échouée !'));
+
 // Modification des en-têtes pour autoriser le fonctionnement de l'application
-// sur plusieurs port (port 3000 pour le backend et port 4200 pour le front end)
+// sur plusieurs port (port 3000 pour le backend et port 4200 pour le frontend)
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization')
