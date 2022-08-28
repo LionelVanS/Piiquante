@@ -1,6 +1,6 @@
 # HotTakes
 
-Ce projet à été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+Ce projet à été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.  
 Pour commencer à utiliser l'application veuillez cloner ce repository.
 
 ## Serveur de développement
