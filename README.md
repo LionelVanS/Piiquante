@@ -1,27 +1,15 @@
 # HotTakes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+Ce projet à été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Serveur de développement
 
-## Code scaffolding
+Pour faire fonctionner l'application Express, veuillez taper la commande 'npm install' dans le dossier back pour installer les dépendances.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Pour lancer le serveur, utiliser la commande 'nodemon server'.
 
-## Build
+## Front end
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Pour faire fonctionner le frontend, installez les dépendances dans le dossier front avec la commande 'npm install'.
+Ensuite, utilisez la commande 'npm start' pour lancer l'application et rendez vous sur l'adresse http://localhost:4200.
