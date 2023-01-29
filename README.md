@@ -16,6 +16,7 @@ Pour commencer à utiliser l'application veuillez cloner ce repository.
 ### Pré-requis
 
 - [NodeJs](https://nodejs.org/en/)
+- [Npm](https://www.npmjs.com/)
 - [MongoDb Atlas](https://www.mongodb.com/atlas/database)
 - [Nodemon](https://www.npmjs.com/package//nodemon)
 
