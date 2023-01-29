@@ -26,6 +26,14 @@ Pour faire fonctionner l'application Express, veuillez taper la commande `npm in
 
 Pour faire fonctionner le front end, installez les dépendances dans le dossier front avec la commande `npm install`.
 
+Créez un fichier de variables d'environnement .env dans le dossier back. Le contenu de ce fichier doit être rempli comme ceci:
+
+-DB_USERNAME = Doit contenir le nom d'utilisateur de votre base de donnée  
+-DB_PASSWORD = Doit contenir le mot de passe de votre base de donnée  
+-DB_DATABASE = Doit contenir l'hôte de votre base de données au format "votrehôte.mongodb.net"  
+-JWT_SECRET = Doit contenir le mot de passe secret permettant de générer les tokens  
+-JWT_ROUNDS = Doit contenir le nombre d'itérations pour le salage du mot de passe.
+
 ## Démarrage
 
 Pour lancer le serveur, utiliser la commande `nodemon server` dans le dossier back.
